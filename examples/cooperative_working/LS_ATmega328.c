@@ -11,7 +11,11 @@
 
 #include "LS_defines.h"
 #include "LS_ATmega328.h"
-#include "LS_HD44780.h"
+//#include "LS_HD44780.h"
+//#include "nRF24L01.h"
+//#include "LS_usart.h"
+//#include "fsm.h"
+
 //file definitions
 
 // -----------------------------------------------------------------------------
@@ -201,11 +205,11 @@ void adcWaitConversionFinish(void)
 }
 
 ///* função de debug em lcd 16x2 */
-void lcd_debug(char * frase)
-{
-   LCD_CLEAR_SCREEN();
-   LCD_CURSOR_MOVE_FIRST_LINE();
-   printf(frase);
-   _delay_ms(25);
-
-}
+//void lcd_debug(char * frase)
+//{
+//    LCD_CLEAR_SCREEN();
+//    LCD_CURSOR_MOVE_FIRST_LINE();
+//    printf(frase);
+//    _delay_ms(25);
+//
+//}

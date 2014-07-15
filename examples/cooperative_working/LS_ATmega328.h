@@ -464,7 +464,6 @@ uint8_t spi_read_data(uint8_t * datain, uint8_t len);
 #define ADC_CLOCK_PRESCALER_32()		do{set_bit(ADCSRA,ADPS2);clr_bit(ADCSRA,ADPS1);set_bit(ADCSRA,ADPS0);}while(0)
 #define ADC_CLOCK_PRESCALER_64()		do{set_bit(ADCSRA,ADPS2);set_bit(ADCSRA,ADPS1);clr_bit(ADCSRA,ADPS0);}while(0)
 #define ADC_CLOCK_PRESCALER_128()		do{set_bit(ADCSRA,ADPS2);set_bit(ADCSRA,ADPS1);set_bit(ADCSRA,ADPS0);}while(0)
-#define ADC_WAIT_CONVERSION_FINISH()     while (tst_bit(ADCSRA, ADSC));
 #define ADC_DIGITAL_INPUT_0_DISABLE()		set_bit(DIDR0,ADC0D)
 #define ADC_DIGITAL_INPUT_0_ENABLE()		clr_bit(DIDR0,ADC0D)
 #define ADC_DIGITAL_INPUT_1_DISABLE()		set_bit(DIDR0,ADC1D)

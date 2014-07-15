@@ -177,7 +177,7 @@ typedef struct adcConfiguration_t {
 #define LCD_DATA_DDR		DDRD		// User configurable
 #define LCD_DATA_PIN		PIND		// User configurable
 #define LCD_DATA_PORT		PORTD		// User configurable
-#define LCD_DATA_D4		    PD4		// User configurable
+#define LCD_DATA_D4		PD4		// User configurable
 #define LCD_CONTROL_DDR		DDRD		// User configurable
 #define LCD_CONTROL_PORT	PORTD		// User configurable
 #define LCD_CONTROL_PIN		PIND		// User configurable
